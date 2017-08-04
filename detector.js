@@ -12,7 +12,6 @@ class PitchDetector {
 
     //state related to pitch detection
     this.bufferLength = this.analyser.frequencyBinCount;
-    console.log('bufferLength', this.bufferLength);
     this.dataArray = new Uint8Array(this.bufferLength);
 
     this.init();

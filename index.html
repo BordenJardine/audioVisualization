@@ -5,13 +5,12 @@
     body {
       margin: 0;
       padding: 0;
-      color: #fff;
-      font-family: 'sans-serif';
-      font-size: 18pt;
     }
 
     label {
-      display: inline-block;
+      padding: 0.5em;
+      display: block;
+      font-family: Sans-Serif;
     }
 
     #container {
@@ -20,14 +19,21 @@
       transition: background-color 0.25s;
     }
 
-
+    #debug {
+      font-size: 24pt;
+      color: #fff;
+      display: none;
+    }
   </style>
 
 </head>
 <body>
   <div id="container">
-    <label>pitch: <p id="pitch">0</p> </label>
-    <label>raw volume: <p id="volume">0</p> </label>
-    <label>dbs: <p id="dbs">0</p> </label>
+    <div id="debug">
+      <label>pitch: <span id="pitch"></span> </label>
+      <label>raw volume: <span id="volume"></span> </label>
+      <label>treated volume: <span id="dbs"></span> </label>
+      <label>color: <span id="color"></span> </label>
+    </div>
   </div>
 </body>
